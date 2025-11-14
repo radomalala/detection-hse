@@ -1,73 +1,91 @@
-# React + TypeScript + Vite
+# 🚨 Application de Détection HSE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Application web mobile pour la déclaration et le signalement d'événements HSE (Hygiène, Sécurité, Environnement).
 
-Currently, two official plugins are available:
+## 📋 Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cette application permet aux utilisateurs de signaler rapidement des incidents de sécurité, accidents, observations ou problèmes environnementaux directement depuis leur appareil mobile. L'interface intuitive facilite la collecte d'informations essentielles avec la possibilité d'ajouter des photos.
 
-## React Compiler
+## ✨ Fonctionnalités
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📱 **Interface mobile responsive** optimisée pour les appareils mobiles
+- 🎨 **Design moderne** avec Tailwind CSS
+- 📸 **Capture de photos** pour documenter les incidents
+- 📝 **Formulaire complet** avec validation
+- ⚡ **Catégorisation** des événements :
+  - Accidents
+  - Incidents proches
+  - Observations de sécurité
+  - Problèmes environnementaux
+- 📍 **Géolocalisation** et horodatage automatique
+- ✅ **Feedback visuel** lors de la soumission
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Utilisées
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React 19** - Framework JavaScript
+- **TypeScript** - Typage statique
+- **Vite** - Build tool et dev server
+- **Tailwind CSS** - Framework CSS utilitaire
+- **ESLint** - Linter pour la qualité du code
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Installation
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+```bash
+# Cloner le dépôt
+git clone https://github.com/radomalala/detection-hse.git
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Accéder au dossier
+cd detection-hse
+
+# Installer les dépendances
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Utilisation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Lancer le serveur de développement
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Compiler pour la production
+npm run build
+
+# Prévisualiser la version de production
+npm run preview
+
+# Linter le code
+npm run lint
 ```
+
+## 📦 Structure du Projet
+
+```
+mon-app-hse/
+├── public/              # Fichiers statiques
+├── src/
+│   ├── App.jsx         # Composant principal de l'application
+│   ├── main.tsx        # Point d'entrée
+│   ├── index.css       # Styles globaux avec Tailwind
+│   └── assets/         # Images et ressources
+├── index.html          # Template HTML
+├── vite.config.ts      # Configuration Vite
+├── tailwind.config.js  # Configuration Tailwind CSS
+└── package.json        # Dépendances et scripts
+```
+
+## 🎯 Prochaines Étapes
+
+- [ ] Intégration d'une API backend
+- [ ] Authentification des utilisateurs
+- [ ] Tableau de bord administrateur
+- [ ] Notifications push
+- [ ] Mode hors ligne
+- [ ] Export des données en PDF
+
+## 👤 Auteur
+
+**radomalala**
+
+## 📄 Licence
+
+Ce projet est privé.
