@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# PWA
+dev-dist
+generate-icons.js
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

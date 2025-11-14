@@ -1,0 +1,5 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" fill="#4f46e5" rx="64"/>
+  <path d="M128 256h85v85h-85zm85-85h85v170h-85zm85 42h85v128h-85z" fill="white"/>
+  <text x="256" y="380" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">HSE</text>
+</svg>
